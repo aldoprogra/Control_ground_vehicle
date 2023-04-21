@@ -1,4 +1,11 @@
+## Uart video
+https://user-images.githubusercontent.com/80604899/233510915-4952ef31-502f-4b03-bcd9-08c33b9f24c6.mp4
+
+
+
 # Control system for an autonomous ground vehicle
+
+
 A microcontroller board is connected to two motors, forming a differential drive. Let l = 0.5 m be the distance between the wheels, and r = 0.2 m the radius of the two wheels.
 The microcontroller receives desired reference values for the speed and the angular velocity of the robot. These reference signals are sent through a serial interface. The microcontroller sends feedback messages back to the control PC to report a few status information.
 
@@ -37,11 +44,14 @@ The microcontroller receives desired reference values for the speed and the angu
 ## Hardware specifications
 *Board : dsPIC30F4011/4012*
 
+![photo_2023-01-14_21-32-04](https://user-images.githubusercontent.com/80604899/233511082-97970ca5-cdcd-4deb-a377-b1d6616c60f5.jpg)
+
 • Each motor can run from -50 to +50 RPMs
 • The motors are controlled through a PWM signal.
 - The frequency must be 1 kHz.
 - 50% duty cycle corresponds to 0 RPM, 0% corresponds to -60 RPM and 100% corresponds to 60 RPMs.
 - A dead time of at least 3 microseconds should be used to prevent problems with the H-bridge controlling the motors. o Running the motors above +-50 RPMs can damage them and should be avoided.
+- 
 ## Contributors
 
 
